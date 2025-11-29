@@ -57,14 +57,14 @@
         // ==========================================
         // CONFIGURAZIONE SUPABASE
         // ==========================================
-        const SUPABASE_URL = "INSERISCI_URL_QUI"; 
-        const SUPABASE_ANON_KEY = "INSERISCI_KEY_QUI";
+        const SUPABASE_URL = "https://wrduyaxkwfuybbedlybj.supabase.co"; 
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndyZHV5YXhrd2Z1eWJiZWRseWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ0NDc4NTAsImV4cCI6MjA4MDAyMzg1MH0.iJbS1v2QDbU5pQDwSHDTXtvY9ucnQ87b5jX_c7Ikgao";
         // ==========================================
 
         let supabase = null;
         let configError = null;
 
-        if (!SUPABASE_URL || SUPABASE_URL.includes("INSERISCI_URL")) {
+        if (!SUPABASE_URL || SUPABASE_URL.includes("https://wrduyaxkwfuybbedlybj.supabase.co")) {
             configError = "URL o KEY di Supabase mancanti nel codice HTML (righe 60-61).";
         } else if (window.supabase) {
             try {
